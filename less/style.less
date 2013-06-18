@@ -1,0 +1,191 @@
+
+//Import Bootstrap styles
+@import "bootstrap/bootstrap.less";
+
+//Import Site less files
+@import "site/variables.less";		//Site specific variables
+@import "site/layout.less"; 		//Basic layout/HTML5 stuff such as <article> and <section>
+@import "site/typography.less";		//Typography settings
+@import "site/nav.less";			//Nav styling	
+@import "site/backgrounds.less";	//Background images and colors	
+@import "site/responsive.less";		//Gouwestad Bootstrap Responsive customizations
+@import "site/signup.less";			//Mailchimp signup formulier
+
+
+//Site specific story styles
+
+
+.jumbotron{
+	background: none;
+}
+
+
+//header list-style-position: 
+
+header{
+	background: url("../img/pand.jpg") center center fixed;
+	.background-size(cover);
+	height: 85%;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+	.overlay{
+		background: rgba(0,0,0,0.65);
+		}
+	.container{
+		position: relative;
+	}
+	h1{
+			font-size: 4em;
+			font-weight: 300;
+			line-height: 1.4em;
+			color: #fff;
+			span{
+				 font-size: 1.5em;
+			    font-weight: 600;
+			    letter-spacing: -0.05em;
+			    text-transform: uppercase;
+			    display: inline-block;
+			}
+		}
+
+	.btn{
+		text-transform: uppercase;
+		&:before{
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+		    content: "";
+		    display: block;
+		    float: left;
+		    font-family: "FontAwesome";
+		    font-size: 1.1em;
+		    height: 100%;
+		      margin: -0.7em 1em -0.7em -0.7em;
+    		padding: 0.7em;
+    		border-right: 1px solid rgba(0,0,0,0.03);
+		}
+	}
+}
+
+#sharebiz{
+	padding: 5em 0;
+	h1{
+		margin-top:0;
+	}
+}
+
+//sectie pand 
+
+.pand{
+	background: url("../img/logo-wand.jpg") no-repeat center fixed;
+	background-size: cover;
+	padding: 4em 0;
+	color: #fff;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+	.overlay{
+		background: rgba(0,0,0,0.75);
+	}
+			.container{
+			position: relative;
+		}
+	h1, h2{
+		color: #fff;
+		margin-bottom: 0.5em;
+		i{
+			margin-bottom: 0.2em;
+		}
+	}
+	p{
+		font-size: 1.1em;
+	}
+}
+
+
+// sectie ondernemers
+.ondernemers{
+	overflow: hidden;
+	background: #f4f4f4;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	p{
+		max-width: 80%;
+		margin: 0 auto 3em;
+	}
+	img{
+		margin-bottom: -20em;
+		border-radius: 8px;
+	}
+	.btn{
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		&:before{
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+		    content: "";
+		    display: block;
+		    float: left;
+		    font-family: "FontAwesome";
+		    font-size: 1.5em;
+		    height: 100%;
+		     margin: -0.7em 1em -0.7em -0.7em;
+    		padding: 0.7em;
+    		border-right: 1px solid rgba(0,0,0,0.03);
+		}
+	}
+}
+
+// sectie hands-on
+.hands-on{
+	background: url("../img/logo-d.jpg") right bottom no-repeat;
+}
+
+.teams{
+	background: url("../img/faces.jpg") repeat-x center;
+	height: 300px;
+}
+
+.teamfotos img{
+	max-width: 90px;
+	margin-right: 1em;
+	:last-child{
+		margin-right: 0;
+	}
+}
+
+.tour{
+}
+
+.boxes{
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 40px;
+	}
+	
+.boxes .grid_4{
+	margin-bottom: 40px;
+	}
+	
+.boxes i{
+	font-size: 1.8em;
+	padding: 1px 15px 0 0;
+	}
+
+// sectie kosten
+
+
+#map_canvas{
+	max-width: none;
+	 width:100%;
+	 height:35em;
+	 img{
+	 	max-width: none;
+	 	width: auto;
+	 	display: inline;
+	 }
+}
+
+//Sectie prijzen
+
+
+#priceheader{
+	background: #55606F;
+	}
+	

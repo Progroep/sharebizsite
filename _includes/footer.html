@@ -1,0 +1,65 @@
+            <footer>
+                <div class="container text-center">
+                    <p>&copy; Company 2012</p>
+                </div>
+            </footer>
+            
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="{{ site.url }}/js/vendor/bootstrap.min.js"></script>
+
+        <script src="{{ site.url }}/js/main.js"></script>
+
+                <!-- Slider script & styles -->
+         <script src="{{ site.url }}/js/vendor/jquery.flexslider-min.js"></script>
+         <script src="{{ site.url }}/js/vendor/waypoints.min.js"></script>
+         
+        <!-- Start the slider up -->
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider({
+              animation: "slide",
+              after: function(slider) {
+                $('.current-slide').toggleClass(animate);
+              }
+            });
+          });
+        </script>
+
+         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+            <script>
+        function initialize() {
+          var sharebiz = new google.maps.LatLng(52.037584,4.499599);
+          var panoramaOptions = {
+            position: sharebiz,
+            scrollwheel: false,
+            pov: {
+              heading: 1,
+              pitch: 0,
+              zoom: 0
+            }
+          };
+          var panorama = new  google.maps.StreetViewPanorama(document.getElementById('map_canvas'),panoramaOptions);
+                map.setStreetView(panorama);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+            </script>
+
+        <!-- Google Analytics -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
+
+after: function(slider) {
+        $('.current-slide').toggleClass(animate);
+      }

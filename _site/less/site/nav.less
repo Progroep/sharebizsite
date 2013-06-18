@@ -1,0 +1,90 @@
+.nav-btn{
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0.5em;
+	display:  block;
+	z-index: 100;
+	.graylighter();
+}
+
+.nav-side{
+	.graydark();
+	position: fixed;
+	left: -15em;
+	top: 0;
+	height: 100%;
+	width: 15em;
+	display: block;
+	z-index: 200;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	a{
+		color: #fff;
+		transition: all 0.2s ease;
+		&:hover{
+			color: @brand-primary;
+    		transition: all 0.2s ease;
+		}
+	}
+	&.visible{
+		left: 0;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	.nav-btn-side{
+		display: block;
+		margin: 0.2em 0.5em;
+		font-size: 1.2em;
+		text-align: right;
+	}
+	.nav-pills > li > a {
+    border-radius: 0;
+	}
+}
+
+
+.body-overlay{
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+	.opacity(0);
+	&.visible{
+		.opacity(1);
+		z-index: 100;
+	}
+}
+
+
+
+/* ---------------------------------------
+   Buttons
+----------------------------------------*/	
+.btn{
+	background: #7da7d9;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: #eee;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+	}
+	
+.btn:hover{
+	background: #688db9;
+	color: #fff;
+	}
+
+.btn-large{
+	padding: 1em; 
+}
+	
