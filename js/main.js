@@ -104,6 +104,8 @@ $("#btn-mc-close").click(function (e) {
   $(".mc-page-2").toggleClass("animate-open");
 });
 
+
+
 // Waypoints stuff
 
 $(function() {

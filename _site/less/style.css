@@ -1153,6 +1153,11 @@ input[type="color"] {
   -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease;
+  -moz-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease;
+  -o-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease;
+  -ms-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease;
+  transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease;
 }
 select:focus,
 textarea:focus,
@@ -1809,6 +1814,11 @@ input[type="button"].btn-block {
   -moz-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -webkit-transition: all opacity 0.15s linear ease;
+  -moz-transition: all opacity 0.15s linear ease;
+  -o-transition: all opacity 0.15s linear ease;
+  -ms-transition: all opacity 0.15s linear ease;
+  transition: all opacity 0.15s linear ease;
 }
 .fade.in {
   opacity: 1;
@@ -1821,6 +1831,11 @@ input[type="button"].btn-block {
   -moz-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
+  -webkit-transition: all height 0.35s ease ease;
+  -moz-transition: all height 0.35s ease ease;
+  -o-transition: all height 0.35s ease ease;
+  -ms-transition: all height 0.35s ease ease;
+  transition: all height 0.35s ease ease;
 }
 .collapse.in {
   height: auto;
@@ -3018,6 +3033,11 @@ button.close {
   -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
   -o-transition: opacity 0.3s linear, top 0.3s ease-out;
   transition: opacity 0.3s linear, top 0.3s ease-out;
+  -webkit-transition: all opacity 0.3s linear, top 0.3s ease-out ease;
+  -moz-transition: all opacity 0.3s linear, top 0.3s ease-out ease;
+  -o-transition: all opacity 0.3s linear, top 0.3s ease-out ease;
+  -ms-transition: all opacity 0.3s linear, top 0.3s ease-out ease;
+  transition: all opacity 0.3s linear, top 0.3s ease-out ease;
 }
 .modal.fade.in {
   top: 0;
@@ -3405,6 +3425,11 @@ button.close {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all all 0.2s ease-in-out ease;
+  -moz-transition: all all 0.2s ease-in-out ease;
+  -o-transition: all all 0.2s ease-in-out ease;
+  -ms-transition: all all 0.2s ease-in-out ease;
+  transition: all all 0.2s ease-in-out ease;
 }
 .thumbnail {
   display: block;
@@ -3604,6 +3629,11 @@ a.list-group-item.active > .badge,
   -moz-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -webkit-transition: all width 0.6s ease ease;
+  -moz-transition: all width 0.6s ease ease;
+  -o-transition: all width 0.6s ease ease;
+  -ms-transition: all width 0.6s ease ease;
+  transition: all width 0.6s ease ease;
 }
 .progress-striped .progress-bar {
   background-color: #7da7d9;
@@ -3700,6 +3730,11 @@ a.list-group-item.active > .badge,
   -moz-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+  -webkit-transition: all 0.6s ease-in-out left ease;
+  -moz-transition: all 0.6s ease-in-out left ease;
+  -o-transition: all 0.6s ease-in-out left ease;
+  -ms-transition: all 0.6s ease-in-out left ease;
+  transition: all 0.6s ease-in-out left ease;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -4048,6 +4083,7 @@ h6 {
 .intro {
   font-weight: 300;
   font-size: 1.5em;
+  line-height: 1.6em;
 }
 .analytics {
   font-size: 0.8em;
@@ -4080,6 +4116,11 @@ h6 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   backface-visibility: hidden;
 }
 .btn-animated:hover span {
@@ -4102,6 +4143,11 @@ h6 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .icon-mail:before {
   content: "\f003";
@@ -4241,6 +4287,11 @@ h6 {
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .signup .container {
   padding: 3em 0;
@@ -4355,7 +4406,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 85%;
+  padding: 12em 0;
   overflow: hidden;
   color: #fff;
   position: relative;
@@ -4395,6 +4446,9 @@ header .btn:before {
   padding: 0.7em;
   border-right: 1px solid rgba(0, 0, 0, 0.03);
 }
+.btn-large {
+  padding: 0.7em;
+}
 #sharebiz {
   padding: 5em 0;
 }
@@ -4429,7 +4483,6 @@ header .btn:before {
 }
 .ondernemers {
   overflow: hidden;
-  background: #f4f4f4;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .ondernemers p {
@@ -4449,7 +4502,6 @@ header .btn:before {
   display: block;
   float: left;
   font-family: "FontAwesome";
-  font-size: 1.5em;
   height: 100%;
   margin: -0.7em 1em -0.7em -0.7em;
   padding: 0.7em;
@@ -4480,6 +4532,119 @@ header .btn:before {
 .boxes i {
   font-size: 1.8em;
   padding: 1px 15px 0 0;
+}
+.alle-ondernemers {
+  background: #eeeeee;
+}
+.alle-ondernemers .col-6,
+.alle-ondernemers .col-sm-4,
+.alle-ondernemers .col-lg-3 {
+  padding: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.005);
+  border-left: 1px solid #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.005);
+}
+.alle-ondernemers a:hover,
+.alle-ondernemers a:focus {
+  text-decoration: none;
+}
+.logobox {
+  background-color: #fbfbfb;
+  height: 10em;
+  width: 100%;
+  table-layout: fixed;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.logobox img {
+  transition: transform 0.4s;
+  position: relative;
+}
+.logobox:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+
+}
+.logobox:hover {
+  background-color: #fff;
+}
+.logobox:hover .overlay {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+.logobox:hover img {
+  -webkit-transform: translate(0, -1.5em);
+  -moz-transform: translate(0, -1.5em);
+  -ms-transform: translate(0, -1.5em);
+  -o-transform: translate(0, -1.5em);
+  transform: translate(0, -1.5em);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.logobox:hover .companyintro {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.logobox .logo-padding {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 65%;
+  max-height: 80%;
+}
+.logobox .companyintro {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 1.3em;
+  font-size: 85%;
+  font-weight: 600;
+  background: #2e3846;
+  color: #fff;
+  margin: 0;
+  -webkit-transform: translate(0, 102%);
+  -moz-transform: translate(0, 102%);
+  -ms-transform: translate(0, 102%);
+  -o-transform: translate(0, 102%);
+  transform: translate(0, 102%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.logobox .companyintro h1,
+.logobox .companyintro h2,
+.logobox .companyintro h3,
+.logobox .companyintro h4,
+.logobox .companyintro h5,
+.logobox .companyintro h6 {
+  color: #fff;
 }
 #map_canvas {
   max-width: none;

@@ -10,6 +10,7 @@
 @import "site/backgrounds.less";	//Background images and colors	
 @import "site/responsive.less";		//Gouwestad Bootstrap Responsive customizations
 @import "site/signup.less";			//Mailchimp signup formulier
+@import "site/animations.less";			//Mailchimp signup formulier
 
 
 //Site specific story styles
@@ -25,7 +26,7 @@
 header{
 	background: url("../img/pand.jpg") center center fixed;
 	.background-size(cover);
-	height: 85%;
+	padding: 12em 0;
 	overflow: hidden;
 	color: #fff;
 	position: relative;
@@ -67,6 +68,10 @@ header{
 	}
 }
 
+	.btn-large{
+		padding: 0.7em;
+	}
+
 #sharebiz{
 	padding: 5em 0;
 	h1{
@@ -105,7 +110,6 @@ header{
 // sectie ondernemers
 .ondernemers{
 	overflow: hidden;
-	background: #f4f4f4;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	p{
 		max-width: 80%;
@@ -123,7 +127,6 @@ header{
 		    display: block;
 		    float: left;
 		    font-family: "FontAwesome";
-		    font-size: 1.5em;
 		    height: 100%;
 		     margin: -0.7em 1em -0.7em -0.7em;
     		padding: 0.7em;
@@ -169,6 +172,86 @@ header{
 	}
 
 // sectie kosten
+
+//alle ondernemers
+
+.alle-ondernemers{
+	.graylighter();
+	.col-6, .col-sm-4, .col-lg-3{
+		padding: 0;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid rgba(0,0,0,0.005);
+		border-left: 1px solid #fff;
+		border-right: 1px solid rgba(0,0,0,0.005);
+	}
+	a:hover, a:focus{
+		text-decoration: none;
+	}
+}
+
+.logobox{
+    background-color: #fbfbfb;
+	height: 10em;
+	width: 100%;
+	table-layout: fixed;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	img{
+		transition: transform 0.4s;
+		position: relative;
+	}
+		&:before{
+			content: '';
+			  display: inline-block;
+			  height: 100%;
+			  vertical-align: middle;
+			  margin-right: -0.25em; /* Adjusts for spacing */
+		}
+		&:hover{
+			background-color: #fff;
+			.overlay{
+				.transition(0.3s);
+				.opacity(0.1);
+			}
+			img{
+				.translate(0,-1.5em);
+				.transition(0.4s);
+			}
+			.companyintro{
+				.opacity(1);
+			    .translate(0,0);
+			    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			transition: transform 0.4s, opacity 0.1s 0.3s;
+			}
+		}
+		.logo-padding{
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 65%;
+			max-height: 80%;
+		}
+		.companyintro{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 0.5em 1.3em;
+			font-size: 85%;
+			font-weight: 600;
+			.graydark();
+			color: #fff;
+			margin: 0;
+			.translate(0,102%);
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+			transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
+	}
 
 
 #map_canvas{
