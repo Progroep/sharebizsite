@@ -4657,5 +4657,26 @@ header .btn:before {
   display: inline;
 }
 #priceheader {
-  background: #55606F;
+  background: #2e3846;
+  color: #fff;
+}
+#priceheader h1,
+#priceheader h2,
+#priceheader h3,
+#priceheader h4,
+#priceheader h5,
+#priceheader h6 {
+  color: #fff;
+}
+#priceheader .well {
+  font-size: 90%;
+  color: #557b84;
+}
+#priceheader .well h1,
+#priceheader .well h2,
+#priceheader .well h3,
+#priceheader .well h4,
+#priceheader .well h5,
+#priceheader .well h6 {
+  color: #557b84;
 }
